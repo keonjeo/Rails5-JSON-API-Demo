@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
 
-* Ruby version
+```
+It will return the books json data (including id, name, created_at, and updated_at).
+```
 
-* System dependencies
+## How to invoke
 
-* Configuration
+1. start the server
+`rails server -b 0.0.0.0 -p 3000`
 
-* Database creation
+2. open the browser to access the following url
+`http://localhost:3000/books.json`
 
-* Database initialization
 
-* How to run the test suite
+## Data Response in JSON format
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ruby
+[
+  {
+    "id": 1,
+    "name": "Golang ebook",
+    "created_at": "2019-04-28T10:41:44.000Z",
+    "updated_at": "2019-04-28T10:41:44.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Elixir ebook",
+    "created_at": "2019-04-28T10:41:44.000Z",
+    "updated_at": "2019-04-28T10:41:44.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Rbuy Ebook",
+    "created_at": "2019-04-28T10:41:44.000Z",
+    "updated_at": "2019-04-28T10:41:44.000Z"
+  }
+]
+```
